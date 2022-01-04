@@ -23,7 +23,7 @@ export const Player: React.FC<Props> = ({
     <ReadmeImg width="256" height="64">
       <style>
         {`
-            .paused { 
+            .paused {
               animation-play-state: paused !important;
               background: #e1e4e8 !important;
             }
@@ -63,7 +63,7 @@ export const Player: React.FC<Props> = ({
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }
-            
+
             .progress-bar,
             #track,
             #artist,
@@ -148,7 +148,7 @@ export const Player: React.FC<Props> = ({
             {`${track ?? ""} `.trim()}
           </Text>
           <Text id="artist" color={!track ? "gray" : undefined}>
-            {artist || "Nothing playing..."}
+            {artist || "Radio silence..."}
           </Text>
           {track && (
             <div className="progress-bar">
