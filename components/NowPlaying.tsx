@@ -1,6 +1,6 @@
-import React from "react";
-import ReadmeImg from "./ReadmeImg";
-import Text from "./Text";
+import React from 'react';
+import ReadmeImg from './ReadmeImg';
+import Text from './Text';
 
 export interface Props {
   cover?: string;
@@ -20,7 +20,7 @@ export const Player: React.FC<Props> = ({
   isPlaying,
 }) => {
   return (
-    <ReadmeImg width="256" height="64">
+    <ReadmeImg width='256' height='64'>
       <style>
         {`
             .paused {
@@ -126,33 +126,33 @@ export const Player: React.FC<Props> = ({
         `}
       </style>
       <div
-        className={isPlaying ? "disabled" : ""}
+        className={isPlaying ? 'disabled' : ''}
         style={{
-          display: "flex",
-          alignItems: "center",
+          display: 'flex',
+          alignItems: 'center',
           paddingTop: 8,
           paddingLeft: 4,
         }}
       >
-        <img id="cover" src={cover ?? null} width="48" height="48" />
+        <img id='cover' src={cover ?? null} width='48' height='48' />
         <div
           style={{
-            display: "flex",
+            display: 'flex',
             flex: 1,
-            flexDirection: "column",
+            flexDirection: 'column',
             marginTop: -4,
             marginLeft: 8,
           }}
         >
-          <Text id="track" weight="bold">
-            {`${track ?? ""} `.trim()}
+          <Text id='track' weight='bold'>
+            {`${track ?? ''} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "gray" : undefined}>
-            {artist || "Radio silence..."}
+          <Text id='artist' color={!track ? 'gray' : undefined}>
+            {artist || 'Nothing playing right now...'}
           </Text>
           {track && (
-            <div className="progress-bar">
-              <div id="progress" className={!isPlaying ? "paused" : ""} />
+            <div className='progress-bar'>
+              <div id='progress' className={!isPlaying ? 'paused' : ''} />
             </div>
           )}
         </div>
