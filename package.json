@@ -26,6 +26,7 @@
     "url": "git+https://github.com/JoshLmao/now-playing-profile.git"
   },
   "keywords": [],
+  "type": "module",
   "author": "Nate Moore",
   "license": "ISC",
   "bugs": {
