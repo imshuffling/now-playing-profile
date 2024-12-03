@@ -5,21 +5,23 @@
   "description": "Github profile",
   "main": "index.js",
   "dependencies": {
+    "@vercel/build-utils": "^8.6.0",
     "faunadb": "^2.14.2",
     "isomorphic-unfetch": "^3.0.0",
     "querystring": "^0.2.0",
     "react": "^16.14.0",
-    "react-dom": "^16.13.1",
-    "typescript": "^3.9.6"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.22",
+    "@types/node": "^22.10.1",
     "@types/react": "^16.14.62",
     "@types/react-dom": "^16.9.8",
     "@vercel/node": "^1.7.2",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   },
   "repository": {
     "type": "git",

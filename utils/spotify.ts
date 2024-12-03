@@ -25,6 +25,7 @@ async function getAuthorizationToken() {
     body,
   }).then((r) => r.json());
 
+  // @ts-ignore
   return `Bearer ${response.access_token}`;
 }
 
